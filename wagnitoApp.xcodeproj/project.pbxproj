@@ -28,6 +28,10 @@
 		DB7826792A341131002F7EE7 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826782A341131002F7EE7 /* MainScreen.swift */; };
 		DB78267B2A341168002F7EE7 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78267A2A341168002F7EE7 /* MessagesView.swift */; };
 		DB78267D2A34118F002F7EE7 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */; };
+		DB7826802A34C702002F7EE7 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78267F2A34C702002F7EE7 /* Firebase.swift */; };
+		DB7826842A34CC1E002F7EE7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826832A34CC1E002F7EE7 /* SettingsView.swift */; };
+		DB7826882A34CC46002F7EE7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826872A34CC46002F7EE7 /* MapView.swift */; };
+		DB78268D2A34CD83002F7EE7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78268C2A34CD83002F7EE7 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		DB7826782A341131002F7EE7 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		DB78267A2A341168002F7EE7 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		DB78267F2A34C702002F7EE7 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		DB7826832A34CC1E002F7EE7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB7826872A34CC46002F7EE7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DB78268C2A34CD83002F7EE7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,7 @@
 		DB78266A2A340FFC002F7EE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB78267E2A34C6E9002F7EE7 /* Firebase */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,10 +182,11 @@
 		DB78266B2A341001002F7EE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB7826852A34CC31002F7EE7 /* MapView */,
+				DB7826812A34CBA3002F7EE7 /* MainScreens */,
+				DB7826822A34CBFF002F7EE7 /* SettingsView */,
+				DB78268A2A34CD0A002F7EE7 /* LaunchScreen */,
 				DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */,
-				DB7826782A341131002F7EE7 /* MainScreen.swift */,
-				DB78267A2A341168002F7EE7 /* MessagesView.swift */,
-				DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 		DB78266C2A341008002F7EE7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DB78268F2A34DB3B002F7EE7 /* RegisterVM */,
+				DB78268E2A34DB33002F7EE7 /* LoginVM */,
 				DB7826762A341106002F7EE7 /* MainMessagesVM.swift */,
 			);
 			path = ViewModel;
@@ -205,6 +217,70 @@
 				DB78266F2A341056002F7EE7 /* FontManager.swift */,
 			);
 			path = FontGroups;
+			sourceTree = "<group>";
+		};
+		DB78267E2A34C6E9002F7EE7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				DB78267F2A34C702002F7EE7 /* Firebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		DB7826812A34CBA3002F7EE7 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826782A341131002F7EE7 /* MainScreen.swift */,
+				DB7826892A34CCA1002F7EE7 /* ChatScreens */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		DB7826822A34CBFF002F7EE7 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826832A34CC1E002F7EE7 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		DB7826852A34CC31002F7EE7 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826872A34CC46002F7EE7 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		DB7826892A34CCA1002F7EE7 /* ChatScreens */ = {
+			isa = PBXGroup;
+			children = (
+				DB78267A2A341168002F7EE7 /* MessagesView.swift */,
+			);
+			path = ChatScreens;
+			sourceTree = "<group>";
+		};
+		DB78268A2A34CD0A002F7EE7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */,
+				DB78268C2A34CD83002F7EE7 /* RegisterView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		DB78268E2A34DB33002F7EE7 /* LoginVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginVM;
+			sourceTree = "<group>";
+		};
+		DB78268F2A34DB3B002F7EE7 /* RegisterVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegisterVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7826802A34C702002F7EE7 /* Firebase.swift in Sources */,
+				DB7826882A34CC46002F7EE7 /* MapView.swift in Sources */,
+				DB78268D2A34CD83002F7EE7 /* RegisterView.swift in Sources */,
 				DB78267B2A341168002F7EE7 /* MessagesView.swift in Sources */,
 				DB7826702A341056002F7EE7 /* FontManager.swift in Sources */,
 				DB7826792A341131002F7EE7 /* MainScreen.swift in Sources */,
@@ -358,6 +437,7 @@
 				DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */,
 				DB7826312A340D8A002F7EE7 /* wagnitoAppApp.swift in Sources */,
 				DB7826772A341106002F7EE7 /* MainMessagesVM.swift in Sources */,
+				DB7826842A34CC1E002F7EE7 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,10 @@ import Firebase
 class MainMessagesVM : ObservableObject{
     
     init(){
-      //  FetchCurrentUser()
+        FetchCurrentUser()
     }
 
+    private func FetchCurrentUser(){
+        
+    }
 }
