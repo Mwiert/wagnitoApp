@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB7826312A340D8A002F7EE7 /* wagnitoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */; };
+		DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826322A340D8A002F7EE7 /* ContentView.swift */; };
+		DB7826352A340D8B002F7EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7826342A340D8B002F7EE7 /* Assets.xcassets */; };
+		DB7826382A340D8B002F7EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7826372A340D8B002F7EE7 /* Preview Assets.xcassets */; };
+		DB78263A2A340D8B002F7EE7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826392A340D8B002F7EE7 /* Persistence.swift */; };
+		DB78263D2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB78263B2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld */; };
+		DB7826472A340D8B002F7EE7 /* wagnitoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826462A340D8B002F7EE7 /* wagnitoAppTests.swift */; };
+		DB7826512A340D8B002F7EE7 /* wagnitoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */; };
+		DB7826532A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB7826432A340D8B002F7EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB7826252A340D8A002F7EE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB78262C2A340D8A002F7EE7;
+			remoteInfo = wagnitoApp;
+		};
+		DB78264D2A340D8B002F7EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB7826252A340D8A002F7EE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB78262C2A340D8A002F7EE7;
+			remoteInfo = wagnitoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB78262D2A340D8A002F7EE7 /* wagnitoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wagnitoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppApp.swift; sourceTree = "<group>"; };
+		DB7826322A340D8A002F7EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB7826342A340D8B002F7EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB7826372A340D8B002F7EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB7826392A340D8B002F7EE7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DB78263C2A340D8B002F7EE7 /* wagnitoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wagnitoApp.xcdatamodel; sourceTree = "<group>"; };
+		DB7826422A340D8B002F7EE7 /* wagnitoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wagnitoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7826462A340D8B002F7EE7 /* wagnitoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppTests.swift; sourceTree = "<group>"; };
+		DB78264C2A340D8B002F7EE7 /* wagnitoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wagnitoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppUITests.swift; sourceTree = "<group>"; };
+		DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB78262A2A340D8A002F7EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB78263F2A340D8B002F7EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7826492A340D8B002F7EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB7826242A340D8A002F7EE7 = {
+			isa = PBXGroup;
+			children = (
+				DB78262F2A340D8A002F7EE7 /* wagnitoApp */,
+				DB7826452A340D8B002F7EE7 /* wagnitoAppTests */,
+				DB78264F2A340D8B002F7EE7 /* wagnitoAppUITests */,
+				DB78262E2A340D8A002F7EE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB78262E2A340D8A002F7EE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB78262D2A340D8A002F7EE7 /* wagnitoApp.app */,
+				DB7826422A340D8B002F7EE7 /* wagnitoAppTests.xctest */,
+				DB78264C2A340D8B002F7EE7 /* wagnitoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB78262F2A340D8A002F7EE7 /* wagnitoApp */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */,
+				DB7826322A340D8A002F7EE7 /* ContentView.swift */,
+				DB7826342A340D8B002F7EE7 /* Assets.xcassets */,
+				DB7826392A340D8B002F7EE7 /* Persistence.swift */,
+				DB78263B2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld */,
+				DB7826362A340D8B002F7EE7 /* Preview Content */,
+			);
+			path = wagnitoApp;
+			sourceTree = "<group>";
+		};
+		DB7826362A340D8B002F7EE7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826372A340D8B002F7EE7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB7826452A340D8B002F7EE7 /* wagnitoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826462A340D8B002F7EE7 /* wagnitoAppTests.swift */,
+			);
+			path = wagnitoAppTests;
+			sourceTree = "<group>";
+		};
+		DB78264F2A340D8B002F7EE7 /* wagnitoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */,
+				DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */,
+			);
+			path = wagnitoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB78262C2A340D8A002F7EE7 /* wagnitoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7826562A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoApp" */;
+			buildPhases = (
+				DB7826292A340D8A002F7EE7 /* Sources */,
+				DB78262A2A340D8A002F7EE7 /* Frameworks */,
+				DB78262B2A340D8A002F7EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wagnitoApp;
+			productName = wagnitoApp;
+			productReference = DB78262D2A340D8A002F7EE7 /* wagnitoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB7826412A340D8B002F7EE7 /* wagnitoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7826592A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoAppTests" */;
+			buildPhases = (
+				DB78263E2A340D8B002F7EE7 /* Sources */,
+				DB78263F2A340D8B002F7EE7 /* Frameworks */,
+				DB7826402A340D8B002F7EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB7826442A340D8B002F7EE7 /* PBXTargetDependency */,
+			);
+			name = wagnitoAppTests;
+			productName = wagnitoAppTests;
+			productReference = DB7826422A340D8B002F7EE7 /* wagnitoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB78264B2A340D8B002F7EE7 /* wagnitoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB78265C2A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoAppUITests" */;
+			buildPhases = (
+				DB7826482A340D8B002F7EE7 /* Sources */,
+				DB7826492A340D8B002F7EE7 /* Frameworks */,
+				DB78264A2A340D8B002F7EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB78264E2A340D8B002F7EE7 /* PBXTargetDependency */,
+			);
+			name = wagnitoAppUITests;
+			productName = wagnitoAppUITests;
+			productReference = DB78264C2A340D8B002F7EE7 /* wagnitoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB7826252A340D8A002F7EE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DB78262C2A340D8A002F7EE7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DB7826412A340D8B002F7EE7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DB78262C2A340D8A002F7EE7;
+					};
+					DB78264B2A340D8B002F7EE7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DB78262C2A340D8A002F7EE7;
+					};
+				};
+			};
+			buildConfigurationList = DB7826282A340D8A002F7EE7 /* Build configuration list for PBXProject "wagnitoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB7826242A340D8A002F7EE7;
+			productRefGroup = DB78262E2A340D8A002F7EE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB78262C2A340D8A002F7EE7 /* wagnitoApp */,
+				DB7826412A340D8B002F7EE7 /* wagnitoAppTests */,
+				DB78264B2A340D8B002F7EE7 /* wagnitoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB78262B2A340D8A002F7EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7826382A340D8B002F7EE7 /* Preview Assets.xcassets in Resources */,
+				DB7826352A340D8B002F7EE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7826402A340D8B002F7EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB78264A2A340D8B002F7EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB7826292A340D8A002F7EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB78263A2A340D8B002F7EE7 /* Persistence.swift in Sources */,
+				DB78263D2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld in Sources */,
+				DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */,
+				DB7826312A340D8A002F7EE7 /* wagnitoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB78263E2A340D8B002F7EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7826472A340D8B002F7EE7 /* wagnitoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7826482A340D8B002F7EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7826532A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift in Sources */,
+				DB7826512A340D8B002F7EE7 /* wagnitoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB7826442A340D8B002F7EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB78262C2A340D8A002F7EE7 /* wagnitoApp */;
+			targetProxy = DB7826432A340D8B002F7EE7 /* PBXContainerItemProxy */;
+		};
+		DB78264E2A340D8B002F7EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB78262C2A340D8A002F7EE7 /* wagnitoApp */;
+			targetProxy = DB78264D2A340D8B002F7EE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB7826542A340D8B002F7EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB7826552A340D8B002F7EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB7826572A340D8B002F7EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wagnitoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB7826582A340D8B002F7EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wagnitoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB78265A2A340D8B002F7EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wagnitoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wagnitoApp";
+			};
+			name = Debug;
+		};
+		DB78265B2A340D8B002F7EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wagnitoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wagnitoApp";
+			};
+			name = Release;
+		};
+		DB78265D2A340D8B002F7EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wagnitoApp;
+			};
+			name = Debug;
+		};
+		DB78265E2A340D8B002F7EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RNL9A5K59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mwiert.wagnitoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wagnitoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB7826282A340D8A002F7EE7 /* Build configuration list for PBXProject "wagnitoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7826542A340D8B002F7EE7 /* Debug */,
+				DB7826552A340D8B002F7EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7826562A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7826572A340D8B002F7EE7 /* Debug */,
+				DB7826582A340D8B002F7EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7826592A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB78265A2A340D8B002F7EE7 /* Debug */,
+				DB78265B2A340D8B002F7EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB78265C2A340D8B002F7EE7 /* Build configuration list for PBXNativeTarget "wagnitoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB78265D2A340D8B002F7EE7 /* Debug */,
+				DB78265E2A340D8B002F7EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB78263B2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB78263C2A340D8B002F7EE7 /* wagnitoApp.xcdatamodel */,
+			);
+			currentVersion = DB78263C2A340D8B002F7EE7 /* wagnitoApp.xcdatamodel */;
+			path = wagnitoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB7826252A340D8A002F7EE7 /* Project object */;
+}
