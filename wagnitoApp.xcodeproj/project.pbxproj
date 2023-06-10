@@ -16,6 +16,18 @@
 		DB7826472A340D8B002F7EE7 /* wagnitoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826462A340D8B002F7EE7 /* wagnitoAppTests.swift */; };
 		DB7826512A340D8B002F7EE7 /* wagnitoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */; };
 		DB7826532A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */; };
+		DB7826612A340FD7002F7EE7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */; };
+		DB7826632A340FD7002F7EE7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826622A340FD7002F7EE7 /* FirebaseDatabase */; };
+		DB7826652A340FD7002F7EE7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826642A340FD7002F7EE7 /* FirebaseFirestore */; };
+		DB7826672A340FD7002F7EE7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826662A340FD7002F7EE7 /* FirebaseFunctions */; };
+		DB7826692A340FF0002F7EE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7826682A340FF0002F7EE7 /* GoogleService-Info.plist */; };
+		DB7826702A341056002F7EE7 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78266F2A341056002F7EE7 /* FontManager.swift */; };
+		DB7826732A341065002F7EE7 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7826712A341065002F7EE7 /* Yellowtail-Regular.ttf */; };
+		DB7826742A341065002F7EE7 /* LilitaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7826722A341065002F7EE7 /* LilitaOne-Regular.ttf */; };
+		DB7826772A341106002F7EE7 /* MainMessagesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826762A341106002F7EE7 /* MainMessagesVM.swift */; };
+		DB7826792A341131002F7EE7 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826782A341131002F7EE7 /* MainScreen.swift */; };
+		DB78267B2A341168002F7EE7 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78267A2A341168002F7EE7 /* MessagesView.swift */; };
+		DB78267D2A34118F002F7EE7 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,15 @@
 		DB78264C2A340D8B002F7EE7 /* wagnitoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wagnitoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppUITests.swift; sourceTree = "<group>"; };
 		DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wagnitoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB7826682A340FF0002F7EE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB78266F2A341056002F7EE7 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		DB7826712A341065002F7EE7 /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
+		DB7826722A341065002F7EE7 /* LilitaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LilitaOne-Regular.ttf"; sourceTree = "<group>"; };
+		DB7826752A34108C002F7EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB7826762A341106002F7EE7 /* MainMessagesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesVM.swift; sourceTree = "<group>"; };
+		DB7826782A341131002F7EE7 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		DB78267A2A341168002F7EE7 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7826632A340FD7002F7EE7 /* FirebaseDatabase in Frameworks */,
+				DB7826612A340FD7002F7EE7 /* FirebaseAnalytics in Frameworks */,
+				DB7826652A340FD7002F7EE7 /* FirebaseFirestore in Frameworks */,
+				DB7826672A340FD7002F7EE7 /* FirebaseFunctions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +123,13 @@
 		DB78262F2A340D8A002F7EE7 /* wagnitoApp */ = {
 			isa = PBXGroup;
 			children = (
-				DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */,
+				DB7826752A34108C002F7EE7 /* Info.plist */,
+				DB78266D2A341012002F7EE7 /* Utils */,
+				DB78266C2A341008002F7EE7 /* ViewModel */,
+				DB78266B2A341001002F7EE7 /* View */,
+				DB78266A2A340FFC002F7EE7 /* Model */,
 				DB7826322A340D8A002F7EE7 /* ContentView.swift */,
+				DB7826682A340FF0002F7EE7 /* GoogleService-Info.plist */,
 				DB7826342A340D8B002F7EE7 /* Assets.xcassets */,
 				DB7826392A340D8B002F7EE7 /* Persistence.swift */,
 				DB78263B2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld */,
@@ -133,6 +163,50 @@
 			path = wagnitoAppUITests;
 			sourceTree = "<group>";
 		};
+		DB78266A2A340FFC002F7EE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB78266B2A341001002F7EE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826302A340D8A002F7EE7 /* wagnitoAppApp.swift */,
+				DB7826782A341131002F7EE7 /* MainScreen.swift */,
+				DB78267A2A341168002F7EE7 /* MessagesView.swift */,
+				DB78267C2A34118F002F7EE7 /* WelcomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB78266C2A341008002F7EE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826762A341106002F7EE7 /* MainMessagesVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB78266D2A341012002F7EE7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB78266E2A341032002F7EE7 /* FontGroups */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DB78266E2A341032002F7EE7 /* FontGroups */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826722A341065002F7EE7 /* LilitaOne-Regular.ttf */,
+				DB7826712A341065002F7EE7 /* Yellowtail-Regular.ttf */,
+				DB78266F2A341056002F7EE7 /* FontManager.swift */,
+			);
+			path = FontGroups;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +223,12 @@
 			dependencies = (
 			);
 			name = wagnitoApp;
+			packageProductDependencies = (
+				DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */,
+				DB7826622A340FD7002F7EE7 /* FirebaseDatabase */,
+				DB7826642A340FD7002F7EE7 /* FirebaseFirestore */,
+				DB7826662A340FD7002F7EE7 /* FirebaseFunctions */,
+			);
 			productName = wagnitoApp;
 			productReference = DB78262D2A340D8A002F7EE7 /* wagnitoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +301,9 @@
 				Base,
 			);
 			mainGroup = DB7826242A340D8A002F7EE7;
+			packageReferences = (
+				DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DB78262E2A340D8A002F7EE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,6 +322,9 @@
 			files = (
 				DB7826382A340D8B002F7EE7 /* Preview Assets.xcassets in Resources */,
 				DB7826352A340D8B002F7EE7 /* Assets.xcassets in Resources */,
+				DB7826692A340FF0002F7EE7 /* GoogleService-Info.plist in Resources */,
+				DB7826742A341065002F7EE7 /* LilitaOne-Regular.ttf in Resources */,
+				DB7826732A341065002F7EE7 /* Yellowtail-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB78267B2A341168002F7EE7 /* MessagesView.swift in Sources */,
+				DB7826702A341056002F7EE7 /* FontManager.swift in Sources */,
+				DB7826792A341131002F7EE7 /* MainScreen.swift in Sources */,
+				DB78267D2A34118F002F7EE7 /* WelcomeScreen.swift in Sources */,
 				DB78263A2A340D8B002F7EE7 /* Persistence.swift in Sources */,
 				DB78263D2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld in Sources */,
 				DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */,
 				DB7826312A340D8A002F7EE7 /* wagnitoAppApp.swift in Sources */,
+				DB7826772A341106002F7EE7 /* MainMessagesVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +519,7 @@
 				DEVELOPMENT_TEAM = 6RNL9A5K59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wagnitoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +549,7 @@
 				DEVELOPMENT_TEAM = 6RNL9A5K59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wagnitoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -591,6 +684,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DB7826622A340FD7002F7EE7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		DB7826642A340FD7002F7EE7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DB7826662A340FD7002F7EE7 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DB78263B2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld */ = {
