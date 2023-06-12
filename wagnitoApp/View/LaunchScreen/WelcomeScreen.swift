@@ -56,6 +56,7 @@ struct WelcomeScreen_Previews: PreviewProvider {
 struct LoginPanel: View {
     @State var mail = ""
     @State var password = ""
+    @State private var currentView = false
     var body: some View {
         VStack{
             HStack(spacing : 15){
@@ -86,13 +87,20 @@ struct LoginPanel: View {
         
         Button(action: {
             
+            // VM'den kullanıcı bilgisi gelirse ekran geçişi yapılacak.
+            // Email ve şifre kontrolü olacak
+            currentView.toggle()
         }){
             Text("Giriş Yap").padding(.vertical)
                 .frame(width: UIScreen.main.bounds.width-100)
-        }.background(
+        }.fullScreenCover(isPresented: $currentView, content: {
+            MainScreen()
+        }).background(
             LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue.opacity(0.8)]), startPoint: .topTrailing, endPoint: .bottomLeading)).cornerRadius(18).foregroundColor(.white).bold().font(Font.system(size:20)).offset(y:-20)
             .padding(.bottom , -20)
             .shadow(radius: 20)
+            
+
         
         HStack{
             Color.white.opacity(0.7).frame(width: UIScreen.main.bounds.width/4,height: 1)
@@ -110,6 +118,7 @@ struct RegisterPanel: View {
     @State var mail = ""
     @State var password = ""
     @State var repassword = ""
+    @State private var currentView = false
     var body: some View {
         VStack{
             HStack(spacing : 15){
@@ -151,11 +160,14 @@ struct RegisterPanel: View {
         .padding(.trailing,10)
         
         Button(action: {
-            
+            currentView.toggle()
         }){
             Text("Kayıt Ol").padding(.vertical)
                 .frame(width: UIScreen.main.bounds.width-100)
-        }.background(
+        }.fullScreenCover(isPresented: $currentView, content: {
+            //kontrollerden sonra view değişecek veya değişmeyecek
+            RegisterView()
+        }).background(
             LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue.opacity(0.8)]), startPoint: .topTrailing, endPoint: .bottomLeading)).cornerRadius(18).foregroundColor(.white).bold().font(Font.system(size:20)).offset(y:-20)
             .padding(.bottom , -20)
             .shadow(radius: 20)

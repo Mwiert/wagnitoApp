@@ -32,6 +32,9 @@
 		DB7826842A34CC1E002F7EE7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826832A34CC1E002F7EE7 /* SettingsView.swift */; };
 		DB7826882A34CC46002F7EE7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826872A34CC46002F7EE7 /* MapView.swift */; };
 		DB78268D2A34CD83002F7EE7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78268C2A34CD83002F7EE7 /* RegisterView.swift */; };
+		DB7826922A3523C0002F7EE7 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826912A3523C0002F7EE7 /* LoginVM.swift */; };
+		DB7826942A3523D2002F7EE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826932A3523D2002F7EE7 /* User.swift */; };
+		DB7826982A352538002F7EE7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826972A352538002F7EE7 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		DB7826832A34CC1E002F7EE7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DB7826872A34CC46002F7EE7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DB78268C2A34CD83002F7EE7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		DB7826912A3523C0002F7EE7 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		DB7826932A3523D2002F7EE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB7826972A352538002F7EE7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		DB78262F2A340D8A002F7EE7 /* wagnitoApp */ = {
 			isa = PBXGroup;
 			children = (
+				DB7826952A35251D002F7EE7 /* Storage */,
 				DB7826752A34108C002F7EE7 /* Info.plist */,
 				DB78266D2A341012002F7EE7 /* Utils */,
 				DB78266C2A341008002F7EE7 /* ViewModel */,
@@ -174,6 +181,7 @@
 		DB78266A2A340FFC002F7EE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB7826932A3523D2002F7EE7 /* User.swift */,
 				DB78267E2A34C6E9002F7EE7 /* Firebase */,
 			);
 			path = Model;
@@ -272,6 +280,7 @@
 		DB78268E2A34DB33002F7EE7 /* LoginVM */ = {
 			isa = PBXGroup;
 			children = (
+				DB7826912A3523C0002F7EE7 /* LoginVM.swift */,
 			);
 			path = LoginVM;
 			sourceTree = "<group>";
@@ -281,6 +290,22 @@
 			children = (
 			);
 			path = RegisterVM;
+			sourceTree = "<group>";
+		};
+		DB7826952A35251D002F7EE7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826962A352526002F7EE7 /* UserDefaults */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DB7826962A352526002F7EE7 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				DB7826972A352538002F7EE7 /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,13 +450,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7826922A3523C0002F7EE7 /* LoginVM.swift in Sources */,
 				DB7826802A34C702002F7EE7 /* Firebase.swift in Sources */,
 				DB7826882A34CC46002F7EE7 /* MapView.swift in Sources */,
 				DB78268D2A34CD83002F7EE7 /* RegisterView.swift in Sources */,
+				DB7826982A352538002F7EE7 /* UserDefaults.swift in Sources */,
 				DB78267B2A341168002F7EE7 /* MessagesView.swift in Sources */,
 				DB7826702A341056002F7EE7 /* FontManager.swift in Sources */,
 				DB7826792A341131002F7EE7 /* MainScreen.swift in Sources */,
 				DB78267D2A34118F002F7EE7 /* WelcomeScreen.swift in Sources */,
+				DB7826942A3523D2002F7EE7 /* User.swift in Sources */,
 				DB78263A2A340D8B002F7EE7 /* Persistence.swift in Sources */,
 				DB78263D2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld in Sources */,
 				DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */,
