@@ -35,6 +35,9 @@
 		DB7826922A3523C0002F7EE7 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826912A3523C0002F7EE7 /* LoginVM.swift */; };
 		DB7826942A3523D2002F7EE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826932A3523D2002F7EE7 /* User.swift */; };
 		DB7826982A352538002F7EE7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826972A352538002F7EE7 /* UserDefaults.swift */; };
+		DB78269A2A37E8C2002F7EE7 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826992A37E8C2002F7EE7 /* RegisterVM.swift */; };
+		DB78269D2A37EA01002F7EE7 /* UserIVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78269C2A37EA01002F7EE7 /* UserIVM.swift */; };
+		DB7826A02A37EA4A002F7EE7 /* MapsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78269F2A37EA4A002F7EE7 /* MapsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		DB7826912A3523C0002F7EE7 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		DB7826932A3523D2002F7EE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB7826972A352538002F7EE7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		DB7826992A37E8C2002F7EE7 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
+		DB78269C2A37EA01002F7EE7 /* UserIVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIVM.swift; sourceTree = "<group>"; };
+		DB78269F2A37EA4A002F7EE7 /* MapsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +143,9 @@
 		DB78262F2A340D8A002F7EE7 /* wagnitoApp */ = {
 			isa = PBXGroup;
 			children = (
-				DB7826952A35251D002F7EE7 /* Storage */,
 				DB7826752A34108C002F7EE7 /* Info.plist */,
+				DB7826952A35251D002F7EE7 /* Storage */,
+				DB7826A12A37EAA8002F7EE7 /* Extensions */,
 				DB78266D2A341012002F7EE7 /* Utils */,
 				DB78266C2A341008002F7EE7 /* ViewModel */,
 				DB78266B2A341001002F7EE7 /* View */,
@@ -202,6 +209,8 @@
 		DB78266C2A341008002F7EE7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DB78269E2A37EA3D002F7EE7 /* MapsVM */,
+				DB78269B2A37E9EA002F7EE7 /* UserInteractionsVM */,
 				DB78268F2A34DB3B002F7EE7 /* RegisterVM */,
 				DB78268E2A34DB33002F7EE7 /* LoginVM */,
 				DB7826762A341106002F7EE7 /* MainMessagesVM.swift */,
@@ -288,6 +297,7 @@
 		DB78268F2A34DB3B002F7EE7 /* RegisterVM */ = {
 			isa = PBXGroup;
 			children = (
+				DB7826992A37E8C2002F7EE7 /* RegisterVM.swift */,
 			);
 			path = RegisterVM;
 			sourceTree = "<group>";
@@ -306,6 +316,29 @@
 				DB7826972A352538002F7EE7 /* UserDefaults.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		DB78269B2A37E9EA002F7EE7 /* UserInteractionsVM */ = {
+			isa = PBXGroup;
+			children = (
+				DB78269C2A37EA01002F7EE7 /* UserIVM.swift */,
+			);
+			path = UserInteractionsVM;
+			sourceTree = "<group>";
+		};
+		DB78269E2A37EA3D002F7EE7 /* MapsVM */ = {
+			isa = PBXGroup;
+			children = (
+				DB78269F2A37EA4A002F7EE7 /* MapsVM.swift */,
+			);
+			path = MapsVM;
+			sourceTree = "<group>";
+		};
+		DB7826A12A37EAA8002F7EE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,9 +494,12 @@
 				DB78267D2A34118F002F7EE7 /* WelcomeScreen.swift in Sources */,
 				DB7826942A3523D2002F7EE7 /* User.swift in Sources */,
 				DB78263A2A340D8B002F7EE7 /* Persistence.swift in Sources */,
+				DB78269D2A37EA01002F7EE7 /* UserIVM.swift in Sources */,
 				DB78263D2A340D8B002F7EE7 /* wagnitoApp.xcdatamodeld in Sources */,
 				DB7826332A340D8A002F7EE7 /* ContentView.swift in Sources */,
+				DB78269A2A37E8C2002F7EE7 /* RegisterVM.swift in Sources */,
 				DB7826312A340D8A002F7EE7 /* wagnitoAppApp.swift in Sources */,
+				DB7826A02A37EA4A002F7EE7 /* MapsVM.swift in Sources */,
 				DB7826772A341106002F7EE7 /* MainMessagesVM.swift in Sources */,
 				DB7826842A34CC1E002F7EE7 /* SettingsView.swift in Sources */,
 			);

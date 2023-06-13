@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class UserDefaultsFuncs {
+    
+    private func getUserDefaults(){
+        
+    }
+    
+    private func saveUserDefaults(){
+        
+    }
+    
+    private func logOut(){
+        
+    }
+}

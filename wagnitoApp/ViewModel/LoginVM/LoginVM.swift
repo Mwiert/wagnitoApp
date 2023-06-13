@@ -8,4 +8,8 @@
 import Foundation
 import Firebase
 
-
+class LoginVM{
+    private func userLogin(Email : String, Password : String)-> Bool {
+        return true
+    }
+}

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var logout = false
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue.opacity(0.8)]), startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
@@ -52,7 +53,8 @@ struct SettingsView: View {
                     .cornerRadius(10)
                     .frame(width: (UIScreen.main.bounds.width)/2)
                     .padding(.trailing,20)
-                }.padding(10)
+                }.padding(5)
+                    .shadow(radius: 10)
                 HStack{
                     HStack(spacing : 15){
                         Image(systemName: "person").foregroundColor(.black)
@@ -68,6 +70,7 @@ struct SettingsView: View {
                 .padding(.leading, 20)
                 .frame(width: (UIScreen.main.bounds.width))
                 .padding(.trailing,20)
+                .shadow(radius: 10)
                 
                 HStack{
                     HStack(spacing : 15){
@@ -83,6 +86,7 @@ struct SettingsView: View {
                 .padding(.leading, 20)
                 .frame(width: (UIScreen.main.bounds.width))
                 .padding(.trailing,20)
+                .shadow(radius: 10)
                 
                 HStack{
                     HStack(spacing : 15){
@@ -98,6 +102,7 @@ struct SettingsView: View {
                 .padding(.leading, 20)
                 .frame(width: (UIScreen.main.bounds.width))
                 .padding(.trailing,20)
+                .shadow(radius: 10)
                 
                 HStack{
                     HStack(spacing : 15){
@@ -113,6 +118,7 @@ struct SettingsView: View {
                 .padding(.leading, 20)
                 .frame(width: (UIScreen.main.bounds.width))
                 .padding(.trailing,20)
+                .shadow(radius: 10)
                 
                 
                 Spacer()
@@ -133,21 +139,29 @@ struct SettingsView: View {
                     .padding(.leading, 35)
                     .frame(width: (UIScreen.main.bounds.width*0.7))
                     .padding(.trailing,10)
+                    .shadow(radius: 10)
                     
                     
                     Spacer()
-                    HStack{
-                        HStack(spacing : 15){
-                            Image(systemName: "door.left.hand.open").foregroundColor(.black).frame(width: (UIScreen.main.bounds.width/5))
-                        }.padding(.vertical,20)
+                    Button(action: {
+                        logout.toggle()
+                    }){
+                        HStack{
+                            HStack(spacing : 15){
+                                Image(systemName: "door.left.hand.open").foregroundColor(.black).frame(width: (UIScreen.main.bounds.width/5))
+                            }.padding(.vertical,20)
+                        }
+                        .background(.white)
+                        .cornerRadius(10)
+                        .frame(width: (UIScreen.main.bounds.width*0.3))
+                    }.fullScreenCover(isPresented: $logout) {
+                        WelcomeScreen()
                     }
-                    .background(.white)
-                    .cornerRadius(10)
-                    .frame(width: (UIScreen.main.bounds.width*0.3))
-                }.padding(.trailing,20)
+                    
+                }.padding(.trailing,20).shadow(radius: 10)
                 
                 
-                Spacer()
+                CustomTabBar()
             }
         }
     }

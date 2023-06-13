@@ -47,14 +47,15 @@ struct MainScreen: View {
                                     }
                                     Spacer()
                                     Text("20dk").font(.system(size: 14,weight: .semibold)).foregroundColor(.white)
-                                }
-                                Divider().background(.white)
+                                }.shadow(radius: 20)
+                                Divider().background(
+                                    LinearGradient(gradient: Gradient(colors: [Color.gray, Color.black]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                                )
                             }.padding(.horizontal)
                         }
                     }
 
                 }
-
 
                 Spacer()
                 
@@ -65,37 +66,47 @@ struct MainScreen: View {
 }
 
 struct CustomTabBar: View {
+    @State private var currentViewSettings = false
+    @State private var currentViewChats = false
+    @State private var currentViewMaps = false
     var body : some View{
         Divider().padding(.bottom,10).foregroundColor(.black).frame(height: 1)
         HStack{
             Spacer()
             Button{
-                
+                currentViewMaps.toggle()
             }label:{
                 
                 VStack(alignment: .center, spacing: 4) {
                     Image(systemName: "map.fill").resizable().scaledToFit().frame(width: 24,height: 24).foregroundColor(.white)
                     Text("Harita").font(.custom(FontsManager.LilitaOne.Regular, size: 12)).foregroundColor(.white)
+                }.fullScreenCover(isPresented: $currentViewMaps) {
+                    MapView()
+
                 }
             }
             Spacer()
             Button{
-                
+                currentViewChats.toggle()
             }label:{
                 
                 VStack(alignment: .center, spacing: 4) {
                     Image(systemName: "bubble.left.fill").resizable().scaledToFit().frame(width: 24,height: 24).foregroundColor(.white)
                     Text("Sohbet").font(.custom(FontsManager.LilitaOne.Regular, size: 12)).foregroundColor(.white)
+                }.fullScreenCover(isPresented: $currentViewChats) {
+                    MainScreen()
                 }
             }
             Spacer()
             Button{
-                
+                currentViewSettings.toggle()
             }label:{
                 
                 VStack(alignment: .center, spacing: 4) {
                     Image(systemName: "gearshape.fill").resizable().scaledToFit().frame(width: 24,height: 24).foregroundColor(.white)
                     Text("Ayarlar").font(.custom(FontsManager.LilitaOne.Regular, size: 12)).foregroundColor(.white)
+                }.fullScreenCover(isPresented: $currentViewSettings) {
+                    SettingsView()
                 }
             }
             Spacer()
