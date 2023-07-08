@@ -8,14 +8,11 @@
 import SwiftUI
 import Firebase
 
+
 @main
 struct wagnitoAppApp: App {
     let persistenceController = PersistenceController.shared
-
-    init(){
-        FirebaseApp.configure()
-        print("Firebase Configured!")
-    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

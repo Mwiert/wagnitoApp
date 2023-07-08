@@ -16,10 +16,6 @@
 		DB7826472A340D8B002F7EE7 /* wagnitoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826462A340D8B002F7EE7 /* wagnitoAppTests.swift */; };
 		DB7826512A340D8B002F7EE7 /* wagnitoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826502A340D8B002F7EE7 /* wagnitoAppUITests.swift */; };
 		DB7826532A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826522A340D8B002F7EE7 /* wagnitoAppUITestsLaunchTests.swift */; };
-		DB7826612A340FD7002F7EE7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */; };
-		DB7826632A340FD7002F7EE7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826622A340FD7002F7EE7 /* FirebaseDatabase */; };
-		DB7826652A340FD7002F7EE7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826642A340FD7002F7EE7 /* FirebaseFirestore */; };
-		DB7826672A340FD7002F7EE7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DB7826662A340FD7002F7EE7 /* FirebaseFunctions */; };
 		DB7826692A340FF0002F7EE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7826682A340FF0002F7EE7 /* GoogleService-Info.plist */; };
 		DB7826702A341056002F7EE7 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78266F2A341056002F7EE7 /* FontManager.swift */; };
 		DB7826732A341065002F7EE7 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7826712A341065002F7EE7 /* Yellowtail-Regular.ttf */; };
@@ -38,6 +34,7 @@
 		DB78269A2A37E8C2002F7EE7 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7826992A37E8C2002F7EE7 /* RegisterVM.swift */; };
 		DB78269D2A37EA01002F7EE7 /* UserIVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78269C2A37EA01002F7EE7 /* UserIVM.swift */; };
 		DB7826A02A37EA4A002F7EE7 /* MapsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78269F2A37EA4A002F7EE7 /* MapsVM.swift */; };
+		DBD8AD262A59EF6600B3C285 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DBD8AD252A59EF6600B3C285 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,10 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7826632A340FD7002F7EE7 /* FirebaseDatabase in Frameworks */,
-				DB7826612A340FD7002F7EE7 /* FirebaseAnalytics in Frameworks */,
-				DB7826652A340FD7002F7EE7 /* FirebaseFirestore in Frameworks */,
-				DB7826672A340FD7002F7EE7 /* FirebaseFunctions in Frameworks */,
+				DBD8AD262A59EF6600B3C285 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +352,7 @@
 			);
 			name = wagnitoApp;
 			packageProductDependencies = (
-				DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */,
-				DB7826622A340FD7002F7EE7 /* FirebaseDatabase */,
-				DB7826642A340FD7002F7EE7 /* FirebaseFirestore */,
-				DB7826662A340FD7002F7EE7 /* FirebaseFunctions */,
+				DBD8AD252A59EF6600B3C285 /* FirebaseAuth */,
 			);
 			productName = wagnitoApp;
 			productReference = DB78262D2A340D8A002F7EE7 /* wagnitoApp.app */;
@@ -436,7 +427,7 @@
 			);
 			mainGroup = DB7826242A340D8A002F7EE7;
 			packageReferences = (
-				DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DBD8AD242A59EF6600B3C285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = DB78262E2A340D8A002F7EE7 /* Products */;
 			projectDirPath = "";
@@ -830,7 +821,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		DBD8AD242A59EF6600B3C285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -841,25 +832,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DB7826602A340FD7002F7EE7 /* FirebaseAnalytics */ = {
+		DBD8AD252A59EF6600B3C285 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		DB7826622A340FD7002F7EE7 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		DB7826642A340FD7002F7EE7 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		DB7826662A340FD7002F7EE7 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB78265F2A340FD7002F7EE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
+			package = DBD8AD242A59EF6600B3C285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 
